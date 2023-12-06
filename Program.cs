@@ -1,4 +1,5 @@
 ﻿using System;
+using InternalB;
 
 namespace NameSpace
 
@@ -8,13 +9,18 @@ namespace NameSpace
         static void Main(string[] args)
         {
             int br = 60;
+
             Console.WriteLine(br);
+
             Console.WriteLine(Storage.NekiTekst);
             Console.WriteLine(Storage.NekiKarakter);
-
             Storage.DirectPrint();
+
             Console.WriteLine(InternalA.BackupA.x);
             Console.WriteLine(InternalA.BackupA.y);
+
+            Console.WriteLine(BackupB.c);
+            Console.WriteLine(BackupB.z);
         }
     }
 }
@@ -39,3 +45,12 @@ class BackupA
     public static int y = 15;
     }
 }
+namespace InternalB
+{
+    class BackupB
+    {
+        public static int c = 100;
+        public static int z = 500;
+    }
+}
+
