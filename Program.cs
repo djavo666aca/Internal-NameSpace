@@ -13,6 +13,8 @@ namespace NameSpace
             Console.WriteLine(Storage.NekiKarakter);
 
             Storage.DirectPrint();
+            Console.WriteLine(InternalA.BackupA.x);
+            Console.WriteLine(InternalA.BackupA.y);
         }
     }
 }
@@ -27,5 +29,13 @@ class Storage
         {
         Console.WriteLine("Ja sam metoda iz Storage klase");
         }
+    }
+}
+namespace InternalA 
+{
+class BackupA 
+    {
+    public static int x = 5; 
+    public static int y = 15;
     }
 }
